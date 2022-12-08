@@ -4,29 +4,30 @@
  */
 package Model.Organization;
 
-import Model.Role.IncidentDepartmentAdmin;
+import Model.Role.EmergencyRequestAdminRole;
+import Model.Role.MealAdminRole;
 import Model.Role.Role;
 import java.util.HashSet;
 
 /**
  *
- * @author Abhishek
+ * @author SejalChandak
  */
-public class IncidentDepartmentOrganization extends Organization{
+public class EmergencyRequestOrganization extends Organization {
 
-    public IncidentDepartmentOrganization(String name) {
+    public EmergencyRequestOrganization(String name) {
         super(name);
     }
 
     @Override
     public HashSet<Role> getSupportedRole() {
-        roles.add(new IncidentDepartmentAdmin() );
+        roles.add(new EmergencyRequestAdminRole());
         return roles;
-     
-            }
-     @Override
+    }
+    
+       @Override
      public Type getType() {
-        return Organization.Type.IncidentDepartmentOrganization;
-    } 
+        return Organization.Type.EmergencyRequestOrganization;
+    }
     
 }
