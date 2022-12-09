@@ -16,7 +16,9 @@ public class Shelter {
     private int capacity;
     private String location;
     private static int sCount;
-
+/* private String email;
+    
+    */
     public Shelter() {
         
         shelterId= "Shelter"+" "+(++sCount);

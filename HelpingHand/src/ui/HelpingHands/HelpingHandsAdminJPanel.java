@@ -24,6 +24,9 @@ import ui.Hospital.HospitalManageUserDetailss;
  */
 public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
 
+/* private String text;
+    
+    */
     /**
      * Creates new form HelpingHandsAdminJPanel
      */
