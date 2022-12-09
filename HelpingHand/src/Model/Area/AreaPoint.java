@@ -15,6 +15,9 @@ public class AreaPoint {
     private double latitude;
     private String name;
 
+/* private String text;
+    
+    */
     public String getName() {
         return name;
     }

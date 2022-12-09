@@ -25,6 +25,9 @@ import javax.swing.table.DefaultTableModel;
  */
 public class CreateShelterJPanel extends javax.swing.JPanel {
 
+/* Twilio class needs to be imported;
+    
+    */
     /**
      * Creates new form CreateShelterJPanel
      */
