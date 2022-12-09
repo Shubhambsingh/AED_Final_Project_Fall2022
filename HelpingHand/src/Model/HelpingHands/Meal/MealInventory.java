@@ -12,7 +12,9 @@ import java.util.ArrayList;
  * @author ShubhamSingh
  */
 public class MealInventory extends Meal {
+/* public string icon;
     
+    */
     private ArrayList<Meal> foodInventory;
 
     public MealInventory() {
