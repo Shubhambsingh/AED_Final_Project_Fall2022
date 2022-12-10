@@ -11,6 +11,8 @@ import Model.Utils.HeaderColors;
 import Model.Utils.Validation;
 import Model.WorkQueue.PatientMedicRequest;
 import Model.WorkQueue.WorkRequest;
+import com.twilio.Twilio;
+import com.twilio.rest.api.v2010.account.Message;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -83,6 +85,9 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         emailValidateMessage = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        phoneNumberText = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -125,14 +130,14 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel5.setText("Purpose of Visit : ");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, 20));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, 20));
         add(txtPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 130, -1));
         add(txtPatientAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 130, -1));
         add(txtPatientGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 130, -1));
 
         emailSuccessLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tick.gif"))); // NOI18N
         emailSuccessLabel.setText("jLabel7");
-        add(emailSuccessLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 40, 40));
+        add(emailSuccessLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 40, 40));
 
         btnCreate.setBackground(new java.awt.Color(102, 217, 255));
         btnCreate.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -142,14 +147,14 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
                 btnCreateActionPerformed(evt);
             }
         });
-        add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
+        add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, -1, -1));
 
         txtPurposeVisit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPurposeVisitActionPerformed(evt);
             }
         });
-        add(txtPurposeVisit, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 220, -1));
+        add(txtPurposeVisit, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 140, -1));
 
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,10 +166,10 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
                 txtEmailKeyTyped(evt);
             }
         });
-        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 140, -1));
+        add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 180, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/emergencyServiceManager700x.png"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 1020, 580));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 690, 580));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel8.setText("Email Address :");
@@ -179,7 +184,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 11, -1, 37));
-        add(emailValidateMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 190, 20));
+        add(emailValidateMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 190, 40));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Victim Details Form");
@@ -187,6 +192,18 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Emergency_ser_team.jpeg"))); // NOI18N
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 20, 130, 150));
+
+        jLabel10.setText("Phone Number :");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
+        add(phoneNumberText, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 170, -1));
+
+        jButton2.setText("Send");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtPurposeVisitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPurposeVisitActionPerformed
@@ -290,13 +307,36 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_txtEmailKeyTyped
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        try
+      {
+        String ACCOUNT_SID = "AC61c11df1bbe597f5caf2e58e3cfcb74c";
+        String Auth_Token = "e5ae99fbfaf9c59a150c807e04108d3f";
+        
+        Twilio.init(ACCOUNT_SID, Auth_Token);
+        
+        Message message = Message.creator(new com.twilio.type.PhoneNumber(phoneNumberText.getText()), 
+                new com.twilio.type.PhoneNumber("+16506633201"), 
+                "Your OTP for OneStopShop registration is "+String.valueOf(phoneNumberText)).create();
+        message.getSid();
+        JOptionPane.showMessageDialog(null, "OTP Send successfully to "+phoneNumberText.getText());
+      }
+      catch(Exception e)
+      {
+          JOptionPane.showMessageDialog(null, "Error Message "+e);
+      }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreate;
     private javax.swing.JLabel emailSuccessLabel;
     private javax.swing.JLabel emailValidateMessage;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -306,6 +346,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField phoneNumberText;
     private javax.swing.JTable tblRequestTablePatient;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtPatientAge;
