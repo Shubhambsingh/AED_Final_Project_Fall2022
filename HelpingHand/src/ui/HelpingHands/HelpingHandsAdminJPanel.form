@@ -22,48 +22,42 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="SPTitle" alignment="0" min="-2" pref="623" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ManageOrgBtn" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="CreateCredBtn" alignment="0" min="-2" pref="198" max="-2" attributes="0"/>
-                                  <Component id="ManageEmpBtn" alignment="0" min="-2" pref="198" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace pref="108" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+              <Component id="ManageOrgBtn" pref="257" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+              <Component id="CreateCredBtn" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+              <Component id="ManageEmpBtn" pref="256" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+              <Component id="SPTitle" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Component id="jLabel3" alignment="0" pref="1100" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="SPTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="ManageOrgBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="ManageEmpBtn" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="146" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="CreateCredBtn" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jLabel2" min="-2" pref="140" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Component id="SPTitle" min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ManageEmpBtn" alignment="3" min="-2" pref="82" max="-2" attributes="0"/>
+                  <Component id="CreateCredBtn" alignment="3" min="-2" pref="82" max="-2" attributes="0"/>
+                  <Component id="ManageOrgBtn" alignment="3" min="-2" pref="81" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="153" max="32767" attributes="0"/>
+              <EmptySpace pref="788" max="32767" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel3" min="-2" pref="1007" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -75,7 +69,7 @@
           <Font name="Malayalam MN" size="24" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="SERVICE PROVIDER"/>
+        <Property name="text" type="java.lang.String" value="Helping Hands"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ManageOrgBtn">
@@ -94,7 +88,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Manage Employer"/>
+        <Property name="text" type="java.lang.String" value="Manage Role"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManageEmpBtnActionPerformed"/>
@@ -105,24 +99,18 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Employer Credential"/>
+        <Property name="text" type="java.lang.String" value="Manage Organization Credetials"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateCredBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/collaboration.png"/>
+          <Image iconType="3" name="/images/SAM_Illustrations_Food@2x-1.png"/>
         </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/images/collaboration.png"/>
-        </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
   </SubComponents>

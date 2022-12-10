@@ -24,9 +24,6 @@ import ui.Hospital.HospitalManageUserDetailss;
  */
 public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
 
-/* private String text;
-    
-    */
     /**
      * Creates new form HelpingHandsAdminJPanel
      */
@@ -84,14 +81,13 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
         ManageOrgBtn = new javax.swing.JButton();
         ManageEmpBtn = new javax.swing.JButton();
         CreateCredBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 204, 255));
 
         SPTitle.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         SPTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SPTitle.setText("SERVICE PROVIDER");
+        SPTitle.setText("Helping Hands");
 
         ManageOrgBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         ManageOrgBtn.setText("Manage Organization");
@@ -102,7 +98,7 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
         });
 
         ManageEmpBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        ManageEmpBtn.setText("Manage Employer");
+        ManageEmpBtn.setText("Manage Role");
         ManageEmpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ManageEmpBtnActionPerformed(evt);
@@ -110,54 +106,50 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
         });
 
         CreateCredBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        CreateCredBtn.setText("Employer Credential");
+        CreateCredBtn.setText("Manage Organization Credetials");
         CreateCredBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CreateCredBtnActionPerformed(evt);
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/collaboration.png"))); // NOI18N
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/collaboration.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/SAM_Illustrations_Food@2x-1.png"))); // NOI18N
+        jLabel3.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SPTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(74, 74, 74)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ManageOrgBtn)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CreateCredBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ManageEmpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(87, 87, 87)
-                                .addComponent(jLabel2)))))
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addGap(46, 46, 46)
+                .addComponent(ManageOrgBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addGap(114, 114, 114)
+                .addComponent(CreateCredBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(122, 122, 122)
+                .addComponent(ManageEmpBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
+                .addGap(53, 53, 53))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(183, 183, 183)
+                .addComponent(SPTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(187, 187, 187))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1100, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(SPTitle)
-                .addGap(141, 141, 141)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(ManageOrgBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(ManageEmpBtn)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addComponent(CreateCredBtn))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(SPTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ManageEmpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CreateCredBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ManageOrgBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(788, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1007, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -207,7 +199,6 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JButton ManageEmpBtn;
     private javax.swing.JButton ManageOrgBtn;
     private javax.swing.JLabel SPTitle;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
