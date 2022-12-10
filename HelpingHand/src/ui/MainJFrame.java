@@ -13,8 +13,14 @@ import Model.Organization.Organization;
 import Model.UserDetails.UserDetails;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.BorderFactory;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  *
@@ -60,7 +66,6 @@ public class MainJFrame extends javax.swing.JFrame {
         UserContainer = new javax.swing.JPanel();
         loginJPanel = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jTxtUsername = new javax.swing.JTextField();
@@ -69,6 +74,8 @@ public class MainJFrame extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabelLogin = new javax.swing.JLabel();
         jLabelUser1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1338, 900));
@@ -124,15 +131,12 @@ public class MainJFrame extends javax.swing.JFrame {
         UserContainer.setForeground(new java.awt.Color(31, 50, 97));
         UserContainer.setPreferredSize(new java.awt.Dimension(1338, 840));
         UserContainer.setLayout(new java.awt.CardLayout());
-        getContentPane().add(UserContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 49, 1440, 1060));
+        getContentPane().add(UserContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -1, 1440, 1110));
 
         loginJPanel.setBackground(new java.awt.Color(198, 210, 198));
         loginJPanel.setPreferredSize(new java.awt.Dimension(1338, 900));
 
-        jPanel1.setBackground(new java.awt.Color(198, 210, 198));
-
-        jLabel1.setBackground(new java.awt.Color(44, 32, 61));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/RMS.png"))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(102, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(198, 210, 198));
 
@@ -148,8 +152,9 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTxtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -181,14 +186,14 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-            .addComponent(jPasswordField1)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
         );
 
         jLabelLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -200,54 +205,66 @@ public class MainJFrame extends javax.swing.JFrame {
         });
 
         jLabelUser1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelUser1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/RELEIF (1).png"))); // NOI18N
+        jLabelUser1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Helping_hands_portrait.jpeg"))); // NOI18N
+
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton1.setText("Chat With US");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 704, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(jLabelLogin))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabelUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(293, Short.MAX_VALUE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelLogin))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addContainerGap()
                 .addComponent(jLabelUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(34, 34, 34)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jLabelLogin)
-                .addContainerGap(274, Short.MAX_VALUE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                .addGap(35, 35, 35)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(164, Short.MAX_VALUE))
         );
+
+        jLabel1.setBackground(new java.awt.Color(44, 32, 61));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Helping_Hand_landscape.jpg"))); // NOI18N
 
         javax.swing.GroupLayout loginJPanelLayout = new javax.swing.GroupLayout(loginJPanel);
         loginJPanel.setLayout(loginJPanelLayout);
         loginJPanelLayout.setHorizontalGroup(
             loginJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(loginJPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1033, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         loginJPanelLayout.setVerticalGroup(
             loginJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, Short.MAX_VALUE)
+            .addGroup(loginJPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(loginJPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 890));
@@ -336,9 +353,99 @@ public class MainJFrame extends javax.swing.JFrame {
         logout();
     }//GEN-LAST:event_btnBackLabelMousePressed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        ArrayList<String> user_input = new ArrayList<String>();
+        JTextArea chatarea = new JTextArea();
+        JTextField chatbox = new JTextField();
+        JFrame jframe = new JFrame();
+        jframe.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jframe.setVisible(true);
+        jframe.setResizable(false);
+        jframe.setLayout(null);
+        jframe.setSize(600, 600);
+        jframe.setTitle("Helping Hand");
+        jframe.add(chatarea);
+        jframe.add(chatbox);
+        
+        //For chat area
+        chatarea.setSize(500, 400);
+        chatarea.setLocation(2,2);
+        
+        // for input area
+        chatbox.setSize(540,30);
+        chatbox.setLocation(2,500);
+        
+        chatbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean chat_end = false;
+                String gtext = chatbox.getText().toLowerCase();
+                chatarea.append("YOU -> "+gtext+"\n");
+                chatbox.setText("");
+                String req_cat  = "";
+                
+                if(gtext.contains("hi")){
+                    bot("Hi, How may I assist you?",chatarea);
+                }
+                
+                if(gtext.contains("blood")){
+                    
+                    bot("So how can I help you?",chatarea);
+                }
+                if(gtext.contains("blood") || gtext.contains("test")){
+                    bot("Okay. Please tell me the test date.",chatarea);
+                    
+                }
+                if(gtext.contains("dec")){
+                    bot("Okay. you have scheduled a test date.",chatarea);
+                    
+                }
+                
+                else if(gtext.contains("equipment") && gtext.contains("book")){
+                    bot("Okay. Please tell me equipments and quantity.",chatarea);
+                    if(gtext.contains("oxygen")){
+                    
+                    bot("Thankyou for ordering",chatarea);
+                }
+                }
+                else if(gtext.contains("2022") && req_cat.equals("MedicalTest")){
+//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
+//                    Date date = formatter.parse(gtext);
+                    user_input.add(gtext);
+                    if(req_cat.equals("MedicalTest")){
+                        bot("Okay. What test do you want to do?",chatarea);
+                    }
+                    else{
+                        bot("Okay. What equipment do you want to order?",chatarea);
+                    }
+                }
+                else if(gtext.contains("blood")){
+//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
+//                    Date date = formatter.parse(gtext);
+                    user_input.add("MedicalTest");
+                    user_input.add(gtext);
+                    bot("A request has been raised. You'll receive an update shortly from the hospital.",chatarea);
+                }  
+                else if(gtext.contains("bed") || gtext.contains("oxygen")){
+//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
+//                    Date date = formatter.parse(gtext);
+                    user_input.add("MedicalEquipment");
+                    user_input.add(gtext);
+                    user_input.add("BOT");
+                    bot("A request has been raised. You'll receive an update shortly from the hospital.",chatarea);
+                }  
+            }
+   
+        });
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
+    private void bot(String bot_resp, JTextArea chatarea){
+        chatarea.append("BOT ->"+bot_resp+"\n");
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -362,7 +469,6 @@ public class MainJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -375,6 +481,7 @@ public class MainJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel UserContainer;
     private javax.swing.JLabel btnBackLabel;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
