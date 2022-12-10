@@ -11,7 +11,9 @@ package Model.PoliceDepartment;
 public class PoliceDepartment {
      private String policeType;
     private int unitCount;
-
+/* pubic string name
+        
+        */
     public String getPoliceType() {
         return policeType;
     }

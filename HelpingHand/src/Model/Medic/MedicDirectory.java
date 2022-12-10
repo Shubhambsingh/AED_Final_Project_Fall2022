@@ -13,7 +13,9 @@ import java.util.ArrayList;
  */
 public class MedicDirectory {
         private ArrayList<Medic> doctorTypeList;
+/* pubic string name
         
+        */
           
      public MedicDirectory(){
          System.out.println("Inside Medic Directory");
