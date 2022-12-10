@@ -17,10 +17,12 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.mail.PasswordAuthentication;
+
 
 /**
  *
- * @author ShubhamSingh
+ * @author Shubham Singh, Abhishek Sand
  */
 public class Validation {
     public static boolean nameValidator(String name) {
@@ -96,8 +98,8 @@ public class Validation {
     
     public static void sendEmailMessage(String emailId, String subject, String text) {
         String to = emailId;
-        String from = "donotreplyers@gmail.com";
-        String pass = "devhuskies";
+        String from = "donotreplyaed@gmail.com";
+        String pass = "srqauqnbmeipsyzw";
 
         Properties properties = System.getProperties();
         String host = "smtp.gmail.com";
@@ -109,7 +111,12 @@ public class Validation {
         properties.put("mail.smtp.port", "587");
         properties.put("mail.smtp.auth", "true");
 
-        Session session = Session.getDefaultInstance(properties);
+        Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication(){
+                    return new PasswordAuthentication(from,pass);
+            }
+        });
 
         try {
             MimeMessage message = new MimeMessage(session);
@@ -122,7 +129,7 @@ public class Validation {
             transport.connect(host, from, pass);
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
-            System.out.println("Sent message successfully....");
+            JOptionPane.showMessageDialog(null, "Email Sent");
         } catch (MessagingException mex) {
             mex.printStackTrace();
             JOptionPane.showMessageDialog(null, "Invalid email id");
@@ -132,8 +139,8 @@ public class Validation {
     public static void sendTextMessage(String contact, String subject, String text) {
         String to = contact;
         System.out.println(contact+subject+text);
-        String from = "huskiesneuinfo6150@gmail.com";
-        String pass = "Huskies@2022";
+        String from = "donotreplyaed@gmail.com";
+        String pass = "srqauqnbmeipsyzw";
         Properties properties = System.getProperties();
         String host = "smtp.gmail.com";
         properties.put("mail.smtp.starttls.enable", "true");

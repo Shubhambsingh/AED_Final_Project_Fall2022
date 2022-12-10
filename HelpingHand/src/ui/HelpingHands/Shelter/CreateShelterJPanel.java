@@ -68,7 +68,7 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
         txtShelterName = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtCapacity = new javax.swing.JTextField();
-        txtArea = new javax.swing.JTextField();
+        txtLocation = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         btnCreateShelter = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
@@ -86,7 +86,7 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "ID", "Shelter Name", "Capacity", "Area"
+                "ID", "Shelter Name", "Capacity", "Location"
             }
         ));
         jScrollPane1.setViewportView(jShelterTable);
@@ -103,11 +103,11 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
 
         txtCapacity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtArea.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtLocation.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel4.setBackground(new java.awt.Color(102, 217, 255));
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        jLabel4.setText("Area");
+        jLabel4.setText("Location");
 
         btnCreateShelter.setBackground(new java.awt.Color(204, 204, 213));
         btnCreateShelter.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
@@ -153,13 +153,13 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(237, 237, 237)
-                        .addComponent(btnCreateShelter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(btnBack)))
+                        .addComponent(btnBack))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addComponent(btnCreateShelter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(91, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -181,11 +181,11 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addComponent(btnCreateShelter)
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -226,7 +226,7 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jShelterTable;
     private javax.swing.JTextField txtCapacity;
-    private javax.swing.JTextField txtArea;
+    private javax.swing.JTextField txtLocation;
     private javax.swing.JTextField txtShelterName;
     // End of variables declaration//GEN-END:variables
 
