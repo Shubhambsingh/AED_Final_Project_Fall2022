@@ -30,3 +30,7 @@ public class MealAdminRole extends Role {
     
     
 }
+
+/* pubic string name
+        
+        */
