@@ -19,7 +19,7 @@ import ui.GoogleMaps.OrganizationMapJPanel;
 
 /**
  *
- * @author Abhishek
+ * @author Abhishek Sand
  */
 public class EmergencyManageOrganization extends javax.swing.JPanel {
 

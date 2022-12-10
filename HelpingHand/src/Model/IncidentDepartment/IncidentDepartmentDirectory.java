@@ -8,7 +8,7 @@ package Model.IncidentDepartment;
 import java.util.ArrayList;
 
 /**
- *
+ **
  * @author Abhishek Sand
  */
 public class IncidentDepartmentDirectory {
