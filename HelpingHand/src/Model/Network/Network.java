@@ -12,6 +12,9 @@ import java.util.ArrayList;
  *
  * @author SejalChandak
  */
+/*
+string test
+*/
 public class Network {
     private String name;
     private AreaPoint locationPoint;

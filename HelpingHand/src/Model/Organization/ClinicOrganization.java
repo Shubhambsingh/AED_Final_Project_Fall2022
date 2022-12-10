@@ -12,6 +12,9 @@ import Model.Role.MedicAdminRole;
  *
  * @author SejalChandak
  */
+/*
+string test
+*/
 public class ClinicOrganization extends Organization{
 
     public ClinicOrganization(String name) {
