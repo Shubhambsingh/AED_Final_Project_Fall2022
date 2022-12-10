@@ -5,7 +5,7 @@
 package Model.IncidentDepartment;
 //
 /**
- *
+ **
  * @author Abhishek Sand
  */
 public class IncidentDepartment {

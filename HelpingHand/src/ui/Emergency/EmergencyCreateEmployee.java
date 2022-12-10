@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Abhishek
+ * @author Abhishek Sand
  */
 public class EmergencyCreateEmployee extends javax.swing.JPanel {
 

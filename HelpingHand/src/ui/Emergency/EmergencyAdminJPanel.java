@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Abhishek
+ * @author Abhishek Sand
  */
 public class EmergencyAdminJPanel extends javax.swing.JPanel {
 
