@@ -159,7 +159,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         SPTitle.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         SPTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SPTitle.setText("Community Panel");
-        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 250, -1));
+        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 250, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconfinder_website_-_male_user_3440844 (1).png"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

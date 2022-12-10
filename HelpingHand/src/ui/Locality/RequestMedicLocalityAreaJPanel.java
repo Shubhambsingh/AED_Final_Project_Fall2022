@@ -82,6 +82,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         emailValidateMessage = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -104,11 +105,11 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblRequestTablePatient);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 690, 245));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 690, 245));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel1.setText("Victim Request for Medic");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 340, 50));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 340, 50));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setText("Victim Name : ");
@@ -163,7 +164,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 140, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/emergencyServiceManager700x.png"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 1020, 580));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 1020, 580));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel8.setText("Email Address :");
@@ -183,6 +184,9 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Victim Details Form");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 170, 40));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Emergency_ser_team.jpeg"))); // NOI18N
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 20, 130, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtPurposeVisitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPurposeVisitActionPerformed
@@ -300,6 +304,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblRequestTablePatient;
     private javax.swing.JTextField txtEmail;

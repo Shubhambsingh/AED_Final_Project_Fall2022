@@ -66,7 +66,7 @@ public class LocalitySetUpInformation extends javax.swing.JPanel {
 
         btnBackNgoSponsor.setBackground(new java.awt.Color(102, 217, 255));
         btnBackNgoSponsor.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnBackNgoSponsor.setText("<< Back");
+        btnBackNgoSponsor.setText("<<");
         btnBackNgoSponsor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackNgoSponsorActionPerformed(evt);
@@ -143,7 +143,7 @@ public class LocalitySetUpInformation extends javax.swing.JPanel {
                                 .addComponent(jButton2)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1)))
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(63, 63, 63)
@@ -170,7 +170,7 @@ public class LocalitySetUpInformation extends javax.swing.JPanel {
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton2)))
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addContainerGap(155, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(127, 127, 127)

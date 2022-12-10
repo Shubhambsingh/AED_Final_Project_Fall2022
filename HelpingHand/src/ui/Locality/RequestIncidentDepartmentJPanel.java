@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Abhishek Sand
+ * @author Abhishek
  */
 public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
 
@@ -63,11 +63,12 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
         doctorTypeComboBox = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 184, -1));
-        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, 184, -1));
+        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 140, -1));
+        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 140, -1));
 
         btnSendRequest.setBackground(new java.awt.Color(102, 217, 255));
         btnSendRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -77,11 +78,11 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
                 btnSendRequestActionPerformed(evt);
             }
         });
-        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, -1, -1));
+        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel1.setText("Community Fire Request");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 36, 343, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 343, -1));
 
         tblRequest.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         tblRequest.setModel(new javax.swing.table.DefaultTableModel(
@@ -95,9 +96,10 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
         tblRequest.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblRequest);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 920, 215));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 920, 190));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
+        btnBack.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 14)); // NOI18N
         btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,28 +110,31 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel8.setText("Respondant Type:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel2.setText("Emergency Type");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
+        jLabel2.setText("Emergency Type :");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 20));
 
-        emergencyTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "low", "medium", "high", "immediate" }));
-        add(emergencyTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 184, -1));
+        emergencyTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Low", "Medium", "High", "Immediate" }));
+        add(emergencyTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, 140, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Location");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, -1));
+        jLabel5.setText("Area :");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
 
-        doctorTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "First Response", "Patrol team", "Emergency Dispatch" }));
-        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
+        doctorTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Customer Service", "Survelliance Team", "Emergency Response" }));
+        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 140, -1));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel7.setText("Number of People Affected :");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fireWorkRequest512xx.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 720, 470));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 510, 380));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Emergency_ser_team.jpeg"))); // NOI18N
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, 130, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSendRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendRequestActionPerformed
@@ -222,6 +227,7 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
