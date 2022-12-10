@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Abhishek Sand
+ * @author Abhishek
  */
 public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -82,7 +82,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnRequestHelpingHands.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnRequestHelpingHands.setText("Request Food");
+        btnRequestHelpingHands.setText("Request Meal");
         btnRequestHelpingHands.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRequestHelpingHandsActionPerformed(evt);
@@ -91,7 +91,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         add(btnRequestHelpingHands, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 250, 30));
 
         btnRequestHospital.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnRequestHospital.setText("Request Community Health Aid");
+        btnRequestHospital.setText("Request Locality Health Aid");
         btnRequestHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRequestHospitalActionPerformed(evt);
@@ -127,7 +127,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         add(btnRequestShelter, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 250, -1));
 
         btnRequestHealthAid.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnRequestHealthAid.setText("Request Patient Health Aid");
+        btnRequestHealthAid.setText("Request Victim Health Aid");
         btnRequestHealthAid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRequestHealthAidActionPerformed(evt);
@@ -145,7 +145,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         add(btnPoliceService, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 470, 250, -1));
 
         btnFireRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnFireRequest.setText("Fire Request");
+        btnFireRequest.setText("Incident Request");
         btnFireRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFireRequestActionPerformed(evt);
@@ -158,11 +158,11 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         SPTitle.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         SPTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SPTitle.setText("Community Panel");
-        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 250, -1));
+        SPTitle.setText("Locality Panel");
+        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 250, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconfinder_website_-_male_user_3440844 (1).png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
         labelArea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/location 32x.png"))); // NOI18N
         labelArea.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -170,7 +170,7 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
                 labelAreaMousePressed(evt);
             }
         });
-        add(labelArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 30, -1, -1));
+        add(labelArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestHelpingHandsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestHelpingHandsActionPerformed
