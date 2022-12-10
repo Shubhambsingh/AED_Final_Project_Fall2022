@@ -98,7 +98,7 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 920, 215));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
-        btnBack.setText("<<Back");
+        btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -129,7 +129,7 @@ public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fireWorkRequest512xx.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 720, 470));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 720, 470));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSendRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendRequestActionPerformed

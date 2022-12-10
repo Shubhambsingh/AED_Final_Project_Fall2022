@@ -63,7 +63,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         txtRequestType = new javax.swing.JTextField();
         txtVenue = new javax.swing.JTextField();
-        txtMedicCount = new javax.swing.JTextField();
+        txtDoctorCount = new javax.swing.JTextField();
         txtPeopleCount = new javax.swing.JTextField();
         btnSendRequest = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -76,12 +76,12 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        jLabel1.setText("Locality Hospital Request");
+        jLabel1.setText("Community Hospital Request");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 384, -1));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnBack.setText("<<Back");
+        btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -94,11 +94,11 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Area :");
+        jLabel5.setText("Location :");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel6.setText("Number of Medics : ");
+        jLabel6.setText("Number of Doctors : ");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -106,7 +106,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
         add(txtRequestType, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 118, -1));
         add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 118, -1));
-        add(txtMedicCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 118, -1));
+        add(txtDoctorCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 118, -1));
         add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, 119, -1));
 
         btnSendRequest.setBackground(new java.awt.Color(102, 217, 255));
@@ -126,7 +126,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "No of Medics", "Date of Request", "Date of Resolution", "Area", "People Affected", "Medic Type", "Status", "Sender", "Receiver"
+                "No of Doctors", "Date of Request", "Date of Resolution", "Location", "People Affected", "Doctor Type", "Status", "Sender", "Receiver"
             }
         ));
         tblRequest.setGridColor(new java.awt.Color(0, 0, 0));
@@ -135,7 +135,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 910, 277));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel8.setText("Medic Type:");
+        jLabel8.setText("Doctor Type:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, -1, -1));
 
         doctorTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -265,7 +265,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblRequest;
-    private javax.swing.JTextField txtMedicCount;
+    private javax.swing.JTextField txtDoctorCount;
     private javax.swing.JTextField txtPeopleCount;
     private javax.swing.JTextField txtRequestType;
     private javax.swing.JTextField txtVenue;
