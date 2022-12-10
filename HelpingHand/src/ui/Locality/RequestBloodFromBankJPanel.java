@@ -54,7 +54,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblRequestBloodTableLocality = new javax.swing.JTable();
+        tblRequestBloodTableCommunity = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -70,13 +70,13 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        tblRequestBloodTableLocality.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
-        tblRequestBloodTableLocality.setModel(new javax.swing.table.DefaultTableModel(
+        tblRequestBloodTableCommunity.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        tblRequestBloodTableCommunity.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Blood Type", "No of Blood Packets Required", "Request Date", "Resolve Date", "Area", "Status", "Sender", "Receiver"
+                "Blood Type", "No of Blood Packets Required", "Request Date", "Resolve Date", "Location", "Status", "Sender", "Receiver"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -87,8 +87,8 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblRequestBloodTableLocality.setGridColor(new java.awt.Color(0, 0, 0));
-        jScrollPane1.setViewportView(tblRequestBloodTableLocality);
+        tblRequestBloodTableCommunity.setGridColor(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setViewportView(tblRequestBloodTableCommunity);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel1.setText("Request Blood Request from Blood Bank");
@@ -100,7 +100,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
         jLabel3.setText("No of packets:");
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel4.setText("Area:");
+        jLabel4.setText("Location:");
 
         bloodGroupComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -112,7 +112,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
 
         jButton1.setBackground(new java.awt.Color(102, 217, 255));
         jButton1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jButton1.setText("<<Back");
+        jButton1.setText("<<");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -182,7 +182,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(bloodGroupComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,7 +329,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblRequestBloodTableLocality;
+    private javax.swing.JTable tblRequestBloodTableCommunity;
     private javax.swing.JTextField txtPacketCount;
     private javax.swing.JTextField txtPurpose;
     private javax.swing.JTextField txtVenue;
