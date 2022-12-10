@@ -84,9 +84,9 @@ public class SPManageUserDetails extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         comboBoxOrganiztion = new javax.swing.JComboBox();
         jLabel5 = new javax.swing.JLabel();
-        btnCreateUserDetails = new javax.swing.JButton();
+        btnCreateUserAccount = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblUserDetailss = new javax.swing.JTable();
+        tblUserAccounts = new javax.swing.JTable();
         txtPassword = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -116,16 +116,16 @@ public class SPManageUserDetails extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jLabel5.setText("Organization");
 
-        btnCreateUserDetails.setBackground(new java.awt.Color(204, 204, 213));
-        btnCreateUserDetails.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        btnCreateUserDetails.setText("Create");
-        btnCreateUserDetails.addActionListener(new java.awt.event.ActionListener() {
+        btnCreateUserAccount.setBackground(new java.awt.Color(204, 204, 213));
+        btnCreateUserAccount.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
+        btnCreateUserAccount.setText("Create");
+        btnCreateUserAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateUserDetailsActionPerformed(evt);
+                btnCreateUserAccountActionPerformed(evt);
             }
         });
 
-        tblUserDetailss.setModel(new javax.swing.table.DefaultTableModel(
+        tblUserAccounts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -148,7 +148,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblUserDetailss);
+        jScrollPane1.setViewportView(tblUserAccounts);
 
         txtPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -210,7 +210,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(28, 28, 28)
-                                        .addComponent(btnCreateUserDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btnCreateUserAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(70, 70, 70)
@@ -250,7 +250,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(btnCreateUserDetails))
+                    .addComponent(btnCreateUserAccount))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -323,7 +323,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnCreateUserDetails;
+    private javax.swing.JButton btnCreateUserAccount;
     private javax.swing.JComboBox comboBoxEmployee;
     private javax.swing.JComboBox comboBoxOrganiztion;
     private javax.swing.JComboBox comboBoxRole;
@@ -335,7 +335,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblUserDetailss;
+    private javax.swing.JTable tblUserAccounts;
     private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables

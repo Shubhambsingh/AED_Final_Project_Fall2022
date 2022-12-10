@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
-
+//
 import Model.BloodSupply.BloodSupplyDirectory;
 import Model.Organization.Organization;
 import Model.UserDetails.UserDetails;
@@ -31,7 +31,7 @@ import Model.HelpingHands.Shelter.ShelterDirectory;
 
 /**
  *
- * @author SejalChandak
+ * @author Sejal Chandak, Abhishek Sand, ShubhamSingh
  */
 public class EcoSystem extends Organization {
 
