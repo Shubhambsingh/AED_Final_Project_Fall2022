@@ -9,7 +9,7 @@ import Model.UserDetails.UserDetails;
 import java.util.Date;
 /**
  *
- * @author SejalChandak
+ * @author Abhishek Sand
  */
 public abstract class WorkRequest {
     
