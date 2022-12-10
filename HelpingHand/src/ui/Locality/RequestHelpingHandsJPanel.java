@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Abhishek Sand
+ * @author Abhishek
  */
 public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
 
@@ -78,11 +78,11 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Malayalam Sangam MN", 1, 24)); // NOI18N
-        jLabel1.setText("Request For Food Assistance");
+        jLabel1.setText("Request For Meal Assistance");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 360, -1));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
-        btnBack.setText("<<Back");
+        btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -114,7 +114,7 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Food Type", "Number of People Affected", "Venue", "Requested Date", "Resolution Date", "Number of Packets", "Status", "Sender", "Receiver"
+                "Meal Type", "No of People Affected", "Venue", "No of Packets", "Status", "Requested Date", "Resolution Date", "Sender", "Receiver"
             }
         ));
         tblRequest.setGridColor(new java.awt.Color(0, 0, 0));
@@ -130,14 +130,14 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
         add(foodTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 138, -1));
         add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 129, -1));
 
-        jLabel2.setText("Food Type :");
+        jLabel2.setText("Meal Type :");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
         add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 129, -1));
 
-        jLabel5.setText("Location:");
+        jLabel5.setText("Area :");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
 
-        jLabel3.setText("#Food Packets: ");
+        jLabel3.setText("#Meal Packets: ");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IndividualOpaque.png"))); // NOI18N

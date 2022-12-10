@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Abhishek Sand
+ * @author Abhishek
  */
 public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
 
@@ -54,7 +54,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblRequestBloodTableCommunity = new javax.swing.JTable();
+        tblRequestBloodTableLocality = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -70,8 +70,8 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        tblRequestBloodTableCommunity.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
-        tblRequestBloodTableCommunity.setModel(new javax.swing.table.DefaultTableModel(
+        tblRequestBloodTableLocality.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
+        tblRequestBloodTableLocality.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -87,20 +87,20 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblRequestBloodTableCommunity.setGridColor(new java.awt.Color(0, 0, 0));
-        jScrollPane1.setViewportView(tblRequestBloodTableCommunity);
+        tblRequestBloodTableLocality.setGridColor(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setViewportView(tblRequestBloodTableLocality);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel1.setText("Request Blood Request from Blood Bank");
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel2.setText("Blood Type:");
+        jLabel2.setText("Blood Type :");
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel3.setText("No of packets:");
+        jLabel3.setText("No of packets :");
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel4.setText("Location:");
+        jLabel4.setText("Area :");
 
         bloodGroupComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -121,7 +121,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
 
         btnSubmitRequest.setBackground(new java.awt.Color(102, 217, 255));
         btnSubmitRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnSubmitRequest.setText("Submit Request");
+        btnSubmitRequest.setText("Submit");
         btnSubmitRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitRequestActionPerformed(evt);
@@ -129,7 +129,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Purpose: ");
+        jLabel5.setText("Purpose : ");
 
         txtPurpose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,9 +149,6 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton1)
-                                    .addGap(196, 196, 196))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jLabel6)
                                     .addGap(75, 75, 75))
@@ -166,7 +163,14 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(txtVenue, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                                         .addComponent(txtPurpose))
-                                    .addGap(24, 24, 24)))
+                                    .addGap(24, 24, 24))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jButton1)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(11, 11, 11)
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGap(166, 166, 166)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(btnSubmitRequest)
                                 .addGap(50, 50, 50)))
@@ -178,9 +182,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
                             .addContainerGap()
                             .addComponent(txtPacketCount, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGap(50, 50, 50)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGap(147, 147, 147)
                             .addComponent(bloodGroupComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
@@ -329,7 +331,7 @@ public class RequestBloodFromBankJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tblRequestBloodTableCommunity;
+    private javax.swing.JTable tblRequestBloodTableLocality;
     private javax.swing.JTextField txtPacketCount;
     private javax.swing.JTextField txtPurpose;
     private javax.swing.JTextField txtVenue;

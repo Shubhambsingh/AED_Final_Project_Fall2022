@@ -24,7 +24,7 @@ import javax.xml.validation.Validator;
 
 /**
  *
- * @author Abhishek Sand
+ * @author Abhishek
  */
 public class RequestHospitalJPanel extends javax.swing.JPanel {
 
@@ -63,7 +63,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         txtRequestType = new javax.swing.JTextField();
         txtVenue = new javax.swing.JTextField();
-        txtDoctorCount = new javax.swing.JTextField();
+        txtMedicCount = new javax.swing.JTextField();
         txtPeopleCount = new javax.swing.JTextField();
         btnSendRequest = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -71,13 +71,14 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         doctorTypeComboBox = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        jLabel1.setText("Community Hospital Request");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 384, -1));
+        jLabel1.setText("Locality Hospital Request");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 384, -1));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -91,23 +92,23 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setText("Request Type :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Location :");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+        jLabel5.setText("Area :");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel6.setText("Number of Doctors : ");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+        jLabel6.setText("No of Medics : ");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel7.setText("Number of People Affected :");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
-        add(txtRequestType, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 118, -1));
-        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 118, -1));
-        add(txtDoctorCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 118, -1));
-        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, 119, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+        add(txtRequestType, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 118, -1));
+        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 118, -1));
+        add(txtMedicCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 118, -1));
+        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 119, -1));
 
         btnSendRequest.setBackground(new java.awt.Color(102, 217, 255));
         btnSendRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -117,7 +118,7 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
                 btnSendRequestActionPerformed(evt);
             }
         });
-        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, -1, -1));
+        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
 
         tblRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblRequest.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -126,23 +127,27 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "No of Doctors", "Date of Request", "Date of Resolution", "Location", "People Affected", "Doctor Type", "Status", "Sender", "Receiver"
+                "No of Medics", "Medic Type", "People Affected", "Area", "Status", "Request Date", "Resolution Date", "Sender", "Receiver"
             }
         ));
         tblRequest.setGridColor(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblRequest);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 910, 277));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 970, 277));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel8.setText("Doctor Type:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, -1, -1));
+        jLabel8.setText("Medic Type :");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, -1, -1));
 
         doctorTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 119, -1));
+        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 119, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IncidentOPAQUESCENE.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 1200, 510));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Hospital_image_op.png"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 1200, 510));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setText("Request Form");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 170, 30));
     }// </editor-fold>//GEN-END:initComponents
 
      public static boolean isDateValid(String date){
@@ -259,13 +264,14 @@ public class RequestHospitalJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblRequest;
-    private javax.swing.JTextField txtDoctorCount;
+    private javax.swing.JTextField txtMedicCount;
     private javax.swing.JTextField txtPeopleCount;
     private javax.swing.JTextField txtRequestType;
     private javax.swing.JTextField txtVenue;
