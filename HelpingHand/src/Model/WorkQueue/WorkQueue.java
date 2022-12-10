@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SejalChandak
+ * @author Abhishek Sand
  */
 public class WorkQueue {
     private ArrayList<WorkRequest> workRequestList;
