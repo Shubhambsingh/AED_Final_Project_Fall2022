@@ -160,7 +160,7 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(255, 255, 255)
                         .addComponent(btnCreateShelter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,7 +185,7 @@ public class CreateShelterJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addComponent(btnCreateShelter)
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(185, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

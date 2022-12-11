@@ -105,6 +105,7 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
             }
         });
 
+        CreateCredBtn.setBackground(new java.awt.Color(255, 255, 204));
         CreateCredBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         CreateCredBtn.setText("Manage Organization Credetials");
         CreateCredBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -121,19 +122,19 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(ManageOrgBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
-                .addGap(114, 114, 114)
-                .addComponent(CreateCredBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(122, 122, 122)
-                .addComponent(ManageEmpBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
-                .addGap(53, 53, 53))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(183, 183, 183)
                 .addComponent(SPTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(187, 187, 187))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(ManageOrgBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addGap(106, 106, 106)
+                .addComponent(ManageEmpBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
+                .addGap(110, 110, 110)
+                .addComponent(CreateCredBtn)
+                .addGap(73, 73, 73))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1100, Short.MAX_VALUE))
+                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1100, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,13 +144,11 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ManageEmpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CreateCredBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ManageOrgBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ManageOrgBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CreateCredBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(788, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1007, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1007, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
