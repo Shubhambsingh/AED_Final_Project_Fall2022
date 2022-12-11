@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Abhishek
+ * @author Abhishek Sand
  */
 public class RequestIncidentDepartmentJPanel extends javax.swing.JPanel {
 

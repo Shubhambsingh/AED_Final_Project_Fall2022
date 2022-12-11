@@ -359,7 +359,7 @@ public class MainJFrame extends javax.swing.JFrame {
         JTextArea chatarea = new JTextArea();
         JTextField chatbox = new JTextField();
         JFrame jframe = new JFrame();
-        jframe.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         jframe.setVisible(true);
         jframe.setResizable(false);
         jframe.setLayout(null);
