@@ -73,15 +73,17 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Malayalam Sangam MN", 1, 24)); // NOI18N
         jLabel1.setText("Request For Meal Assistance");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 360, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 360, -1));
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
+        btnBack.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +97,7 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
                 txtPurposeActionPerformed(evt);
             }
         });
-        add(txtPurpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 129, -1));
+        add(txtPurpose, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 140, -1));
 
         btnSendRequest.setBackground(new java.awt.Color(102, 217, 255));
         btnSendRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -105,7 +107,7 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
                 btnSendRequestActionPerformed(evt);
             }
         });
-        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, -1, -1));
+        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 480, -1, -1));
 
         tblRequest.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblRequest.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
@@ -121,27 +123,30 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
         tblRequest.setShowGrid(true);
         jScrollPane1.setViewportView(tblRequest);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, 860, 176));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 600, 176));
 
-        jLabel7.setText("#People req:");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, -1, -1));
+        jLabel7.setText("#People req :");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, -1, -1));
 
         foodTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(foodTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 138, -1));
-        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 129, -1));
+        add(foodTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 138, -1));
+        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 140, -1));
 
         jLabel2.setText("Meal Type :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
-        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 129, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, -1, -1));
+        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 140, -1));
 
         jLabel5.setText("Area :");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, -1, -1));
 
-        jLabel3.setText("#Meal Packets: ");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, -1, -1));
+        jLabel3.setText("#Meal Packets : ");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IndividualOpaque.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 795, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 670, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Meal1.jpeg"))); // NOI18N
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, 130));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -242,6 +247,7 @@ public class RequestHelpingHandsJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblRequest;
