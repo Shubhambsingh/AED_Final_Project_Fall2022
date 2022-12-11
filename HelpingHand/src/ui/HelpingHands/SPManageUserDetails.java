@@ -59,7 +59,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
         myRole = new HashMap<String, Role>();
         for (Role role : e.getSupportedRole()){
             
-           myRole.put(role.toString().substring(20),role);   
+           myRole.put(role.toString().substring(17),role);
         }
         for (Map.Entry<String,Role> set:myRole.entrySet())
         {
@@ -178,6 +178,12 @@ public class SPManageUserDetails extends javax.swing.JPanel {
         jLabel3.setBackground(new java.awt.Color(102, 217, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jLabel3.setText("Employee");
+
+        comboBoxRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxRoleActionPerformed(evt);
+            }
+        });
 
         jLabel6.setBackground(new java.awt.Color(102, 217, 255));
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
@@ -355,6 +361,10 @@ public class SPManageUserDetails extends javax.swing.JPanel {
     private void txtUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUserNameActionPerformed
+
+    private void comboBoxRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBoxRoleActionPerformed
     private void fillTheTable() {
         DefaultTableModel model = (DefaultTableModel) tblUserAccounts.getModel();
 
