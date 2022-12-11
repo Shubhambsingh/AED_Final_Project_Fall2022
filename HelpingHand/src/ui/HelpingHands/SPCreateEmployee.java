@@ -69,7 +69,7 @@ public class SPCreateEmployee extends javax.swing.JPanel {
         setBackground(new java.awt.Color(204, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        jLabel1.setText("Organiztion Filter :");
+        jLabel1.setText("Organization Filter :");
 
         backJButton.setBackground(new java.awt.Color(102, 217, 255));
         backJButton.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
@@ -103,7 +103,7 @@ public class SPCreateEmployee extends javax.swing.JPanel {
 
         jLabel2.setBackground(new java.awt.Color(102, 217, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        jLabel2.setText("Name of Organization:");
+        jLabel2.setText("Name of Employee:");
 
         comboBoxOrganiztionEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +120,7 @@ public class SPCreateEmployee extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ID", "Name", "Organiztion"
+                "ID", "Name", "Organization"
             }
         ) {
             Class[] types = new Class [] {
