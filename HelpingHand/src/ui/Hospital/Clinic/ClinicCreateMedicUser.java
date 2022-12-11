@@ -150,7 +150,7 @@ public class ClinicCreateMedicUser extends javax.swing.JPanel {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/department128x.png"))); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 1, 18)); // NOI18N
-        jLabel4.setText("Create Doctor Employee Panel");
+        jLabel4.setText("Create Medic Employee Panel");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

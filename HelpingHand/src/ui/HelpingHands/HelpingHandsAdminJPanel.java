@@ -89,6 +89,7 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
         SPTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SPTitle.setText("Helping Hands");
 
+        ManageOrgBtn.setBackground(new java.awt.Color(255, 255, 204));
         ManageOrgBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         ManageOrgBtn.setText("Manage Organization");
         ManageOrgBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +98,7 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
             }
         });
 
+        ManageEmpBtn.setBackground(new java.awt.Color(255, 255, 204));
         ManageEmpBtn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         ManageEmpBtn.setText("Manage Role");
         ManageEmpBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -127,21 +129,21 @@ public class HelpingHandsAdminJPanel extends javax.swing.JPanel {
                 .addGap(187, 187, 187))
             .addGroup(layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addComponent(ManageOrgBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addComponent(ManageOrgBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(106, 106, 106)
-                .addComponent(ManageEmpBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
+                .addComponent(ManageEmpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(110, 110, 110)
                 .addComponent(CreateCredBtn)
-                .addGap(73, 73, 73))
+                .addContainerGap(73, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1100, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(41, 41, 41)
                 .addComponent(SPTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ManageEmpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ManageOrgBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
