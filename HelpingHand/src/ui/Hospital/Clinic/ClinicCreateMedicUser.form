@@ -219,7 +219,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Create Doctor Employee Panel"/>
+        <Property name="text" type="java.lang.String" value="Create Medic Employee Panel"/>
       </Properties>
     </Component>
   </SubComponents>

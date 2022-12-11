@@ -140,7 +140,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         jLabel4.setBackground(new java.awt.Color(102, 217, 255));
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel4.setText("Request for Medics");
+        jLabel4.setText("Request for Doctors");
 
         tblRequestTableLocality.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblRequestTableLocality.setModel(new javax.swing.table.DefaultTableModel(
@@ -148,7 +148,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "No of Medics required", "Date of requirement", "Resolve Date", "Position", "Medic Type", "Status", "Sender", "Receiver"
+                "No of Doctors required", "Date of requirement", "Resolve Date", "Position", "Doctor Type", "Status", "Sender", "Receiver"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -199,7 +199,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Medics available at Hospital");
+        jLabel5.setText("Doctors available at Hospital");
 
         tblAvailableMedic.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblAvailableMedic.setModel(new javax.swing.table.DefaultTableModel(
@@ -207,7 +207,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Medic Type", "No of Medics"
+                "Doctor Type", "No of Doctors"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -230,6 +230,11 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
             }
         });
 
+        txtNoMedics.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNoMedicsActionPerformed(evt);
+            }
+        });
         txtNoMedics.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtNoMedicsKeyPressed(evt);
@@ -247,11 +252,11 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         jLabel7.setBackground(new java.awt.Color(102, 217, 255));
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel7.setText("Medic Type:");
+        jLabel7.setText("Doctor Type:");
 
         jLabel6.setBackground(new java.awt.Color(102, 217, 255));
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel6.setText("No. of Medics:");
+        jLabel6.setText("No. of Doctors:");
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -527,6 +532,10 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void txtNoMedicsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNoMedicsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNoMedicsActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
