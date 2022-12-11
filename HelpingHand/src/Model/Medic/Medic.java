@@ -5,7 +5,7 @@
 package Model.Medic;
 
 import Model.Organization.ClinicOrganization;
-
+//Created Medic
 /**
  *
  * @author Abhishek Sand
