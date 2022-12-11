@@ -86,7 +86,6 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         phoneNumberText = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -200,14 +199,6 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         });
         add(phoneNumberText, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 200, -1));
 
-        jButton2.setText("Send");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, -1, -1));
-
         jLabel11.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel11.setText("Email Address :");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, 20));
@@ -262,10 +253,27 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         ecoSystem.getWorkQueue().getWorkRequestList().add(request);
         validation.sendTextMessage(txtEmail.getText(), "Regarding Medic Appointment Schedule", "Hi" + " " + txtPatientName.getText() +","
         + "\n" + "Your appointment request has been sent to the Clinic. Please wait for the Medic to schedule an appointment.");
+        
+        
+        try
+      {
+        String ACCOUNT_SID = "AC61c11df1bbe597f5caf2e58e3cfcb74c";
+        String Auth_Token = "e5ae99fbfaf9c59a150c807e04108d3f";
+        
+        Twilio.init(ACCOUNT_SID, Auth_Token);
+        
+        Message message = Message.creator(new com.twilio.type.PhoneNumber(phoneNumberText.getText()), 
+                new com.twilio.type.PhoneNumber("+16506633201"), 
+                "Hi, " + txtPatientName.getText() +" Thank You for contacting Helping Hands, Your request has been noted").create();
+        message.getSid();
+        JOptionPane.showMessageDialog(null, "Message Sent successfully to "+phoneNumberText.getText());
+      }
+      catch(Exception e)
+      {
+          JOptionPane.showMessageDialog(null, "Error Message "+e);
+      }
+        
         resetFields();
-        
-        
-        
         fillTheRequestTable();
     }//GEN-LAST:event_btnCreateActionPerformed
    
@@ -277,6 +285,7 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         txtPatientName.setText("");
         txtPurposeVisit.setText("");
         txtEmail.setText("");
+        phoneNumberText.setText("");
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -318,36 +327,12 @@ public class RequestMedicLocalityAreaJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_phoneNumberTextActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        
-        try
-      {
-        String ACCOUNT_SID = "AC61c11df1bbe597f5caf2e58e3cfcb74c";
-        String Auth_Token = "e5ae99fbfaf9c59a150c807e04108d3f";
-        
-        Twilio.init(ACCOUNT_SID, Auth_Token);
-        
-        Message message = Message.creator(new com.twilio.type.PhoneNumber(phoneNumberText.getText()), 
-                new com.twilio.type.PhoneNumber("+16506633201"), 
-                "Your OTP for OneStopShop registration is "+String.valueOf(phoneNumberText)).create();
-        message.getSid();
-        JOptionPane.showMessageDialog(null, "OTP Send successfully to "+phoneNumberText.getText());
-      }
-      catch(Exception e)
-      {
-          JOptionPane.showMessageDialog(null, "Error Message "+e);
-      }
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreate;
     private javax.swing.JLabel emailSuccessLabel;
     private javax.swing.JLabel emailValidateMessage;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;

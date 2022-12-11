@@ -125,6 +125,12 @@ public class HospitalManageUserDetailss extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel4.setText("Role");
 
+        comboBoxRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxRoleActionPerformed(evt);
+            }
+        });
+
         jLabel2.setBackground(new java.awt.Color(102, 217, 255));
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setText("User Name");
@@ -276,6 +282,10 @@ public class HospitalManageUserDetailss extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnCreateUserDetailsActionPerformed
 
+    private void comboBoxRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBoxRoleActionPerformed
+
     public void resetFields() {
         txtUserName.setText("");
         txtPassword.setText("");
@@ -323,9 +333,9 @@ public class HospitalManageUserDetailss extends javax.swing.JPanel {
         myRole = new HashMap<String, Role>();
         for (Role role : e.getSupportedRole()){
             
-           myRole.put(role.toString().substring(20),role);
+           myRole.put(role.toString().substring(17),role);
             
-            //comboBoxRole.addItem(role.toString().substring(20));
+            //comboBoxRole.addItem(role.toString().substring(17));
             
         }
         

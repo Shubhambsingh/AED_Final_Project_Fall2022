@@ -7,7 +7,7 @@ import Model.Employee.Employee;
 import Model.UserDetails.UserDetails;
 import Model.Role.SystemAdminRole;
 /**
- *
+ **
  * @author SejalChandak, ShubhamSingh
  */
 public class ConfigureASystem {
