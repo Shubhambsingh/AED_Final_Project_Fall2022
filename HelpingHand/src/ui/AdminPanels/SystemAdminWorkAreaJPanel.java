@@ -161,7 +161,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         systemAdminPanel.setBackground(new java.awt.Color(198, 210, 198));
         systemAdminPanel.setPreferredSize(new java.awt.Dimension(1338, 840));
 
-        jPanel3.setBackground(new java.awt.Color(198, 210, 198));
+        jPanel3.setBackground(new java.awt.Color(0, 51, 51));
         jPanel3.setMinimumSize(new java.awt.Dimension(280, 148));
         jPanel3.setPreferredSize(new java.awt.Dimension(280, 148));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -294,7 +294,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jScrollPane2.setBackground(new java.awt.Color(198, 210, 198));
 
-        jTree1.setBackground(new java.awt.Color(198, 210, 198));
         jTree1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jTree1.setForeground(new java.awt.Color(0, 0, 0));
         jTree1.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
@@ -336,7 +335,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mapOrganizations, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         seeMapPanelLayout.setVerticalGroup(
             seeMapPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,7 +349,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel3.add(seeMapPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 260, 40));
+        jPanel3.add(seeMapPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 280, 40));
 
         graphPanel.setBackground(new java.awt.Color(198, 210, 198));
 
@@ -373,9 +372,10 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         graphPanelLayout.setHorizontalGroup(
             graphPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(graphPanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mapOrganizations1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mapOrganizations1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         graphPanelLayout.setVerticalGroup(
@@ -384,9 +384,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel3.add(graphPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 220, 40));
+        jPanel3.add(graphPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 280, 40));
 
-        rightSystemAdminPanel.setBackground(new java.awt.Color(198, 210, 198));
+        rightSystemAdminPanel.setBackground(new java.awt.Color(0, 153, 153));
         rightSystemAdminPanel.setPreferredSize(new java.awt.Dimension(1058, 840));
         rightSystemAdminPanel.setLayout(new java.awt.CardLayout());
 
