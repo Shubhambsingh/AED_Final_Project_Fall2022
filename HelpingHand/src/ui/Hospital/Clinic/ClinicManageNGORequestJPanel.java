@@ -140,7 +140,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         jLabel4.setBackground(new java.awt.Color(102, 217, 255));
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel4.setText("Request for Doctors");
+        jLabel4.setText("Request for Medic");
 
         tblRequestTableLocality.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblRequestTableLocality.setModel(new javax.swing.table.DefaultTableModel(
@@ -148,7 +148,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "No of Doctors required", "Date of requirement", "Resolve Date", "Position", "Doctor Type", "Status", "Sender", "Receiver"
+                "No of Medics Required", "Status", "Position", "Medic Type", "Requirement Date", "Resolve Date", "Sender", "Receiver"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -173,7 +173,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         btnDeleteReqHosp.setBackground(new java.awt.Color(255, 153, 153));
         btnDeleteReqHosp.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnDeleteReqHosp.setText("Delete Request");
+        btnDeleteReqHosp.setText("Delete");
         btnDeleteReqHosp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteReqHospActionPerformed(evt);
@@ -182,7 +182,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         btnApproveReqHospital.setBackground(new java.awt.Color(102, 217, 255));
         btnApproveReqHospital.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnApproveReqHospital.setText("Approve Request");
+        btnApproveReqHospital.setText("Approve");
         btnApproveReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveReqHospitalActionPerformed(evt);
@@ -191,7 +191,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         btnRejectReqHospital.setBackground(new java.awt.Color(255, 153, 153));
         btnRejectReqHospital.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnRejectReqHospital.setText("Reject Request");
+        btnRejectReqHospital.setText("Reject");
         btnRejectReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectReqHospitalActionPerformed(evt);
@@ -199,7 +199,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel5.setText("Doctors available at Hospital");
+        jLabel5.setText("Medics available at Hospital");
 
         tblAvailableMedic.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tblAvailableMedic.setModel(new javax.swing.table.DefaultTableModel(
@@ -207,7 +207,7 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Doctor Type", "No of Doctors"
+                "No of Medics", "Medic Type"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -252,15 +252,15 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
 
         jLabel7.setBackground(new java.awt.Color(102, 217, 255));
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel7.setText("Doctor Type:");
+        jLabel7.setText("Medic Type:");
 
         jLabel6.setBackground(new java.awt.Color(102, 217, 255));
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel6.setText("No. of Doctors:");
+        jLabel6.setText("No. of Medics:");
 
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnBack.setText("<< Back");
+        btnBack.setText("<<");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -273,47 +273,50 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnBack)
+                                .addGap(96, 96, 96)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(33, 33, 33)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel6)
-                                        .addGap(38, 38, 38)
-                                        .addComponent(txtNoMedics, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel7)
-                                        .addGap(49, 49, 49)
-                                        .addComponent(cmbDocType, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(btnDelete))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnAdd)
-                                        .addGap(0, 0, Short.MAX_VALUE))))
-                            .addComponent(jScrollPane2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAssignToMe)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnDeleteReqHosp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnApproveReqHospital)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnRejectReqHospital))
-                            .addComponent(jScrollPane1)))
+                                        .addComponent(btnAssignToMe)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnDeleteReqHosp)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnApproveReqHospital)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnRejectReqHospital))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel2)
+                                        .addComponent(jLabel4)
+                                        .addComponent(jLabel5)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnBack)
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel1)))
-                .addContainerGap(131, Short.MAX_VALUE))
+                        .addGap(76, 76, 76)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addGap(71, 71, 71)
+                                .addComponent(txtNoMedics, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(82, 82, 82)
+                                .addComponent(cmbDocType, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(63, 63, 63)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnDelete)
+                            .addComponent(btnAdd))))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAdd, btnApproveReqHospital, btnAssignToMe, btnDelete, btnDeleteReqHosp, btnRejectReqHospital});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -336,8 +339,8 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cmbDocType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
@@ -347,8 +350,11 @@ public class ClinicManageNGORequestJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel6)
                     .addComponent(txtNoMedics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdd))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAdd, btnApproveReqHospital, btnAssignToMe, btnDelete, btnDeleteReqHosp, btnRejectReqHospital});
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAssignToMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignToMeActionPerformed
