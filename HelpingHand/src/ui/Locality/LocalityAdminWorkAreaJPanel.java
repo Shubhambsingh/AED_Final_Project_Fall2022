@@ -76,7 +76,6 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         SPTitle = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        labelArea = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -153,24 +152,16 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnFireRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 250, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/employee.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Locality_Lanscape1_op.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 520, 470));
 
         SPTitle.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         SPTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SPTitle.setText("Locality Panel");
-        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 250, -1));
+        add(SPTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 250, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconfinder_website_-_male_user_3440844 (1).png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
-
-        labelArea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/location 32x.png"))); // NOI18N
-        labelArea.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                labelAreaMousePressed(evt);
-            }
-        });
-        add(labelArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Admin_1.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestHelpingHandsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestHelpingHandsActionPerformed
@@ -280,19 +271,6 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnFireRequestActionPerformed
 
-    private void labelAreaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAreaMousePressed
-        // TODO add your handling code here:
-        try{
-        LocalitySetUpInformation communitySetUpInformation = new LocalitySetUpInformation(userProcessContainer, enterprise.getOrganizationDirectory(), enterprise, ecoSystem, userAccount);
-        userProcessContainer.add("LocalitySetUpInformation", communitySetUpInformation);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-        }
-        catch(NullPointerException e){
-             JOptionPane.showMessageDialog(null, "Some error occurred!!", "Warning", JOptionPane.WARNING_MESSAGE);
-        }
-    }//GEN-LAST:event_labelAreaMousePressed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SPTitle;
@@ -306,6 +284,5 @@ public class LocalityAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnRequestShelter;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel labelArea;
     // End of variables declaration//GEN-END:variables
 }
