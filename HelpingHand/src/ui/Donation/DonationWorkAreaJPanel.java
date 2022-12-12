@@ -117,7 +117,7 @@ public class DonationWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnApproveReqSponsor.setBackground(new java.awt.Color(102, 217, 255));
+        btnApproveReqSponsor.setBackground(new java.awt.Color(0, 153, 51));
         btnApproveReqSponsor.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnApproveReqSponsor.setText("Approve");
         btnApproveReqSponsor.addActionListener(new java.awt.event.ActionListener() {

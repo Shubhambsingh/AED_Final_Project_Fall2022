@@ -72,9 +72,10 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 204, 255));
 
-        btnApproveReqPolice.setBackground(new java.awt.Color(102, 217, 255));
+        btnApproveReqPolice.setBackground(new java.awt.Color(0, 153, 51));
         btnApproveReqPolice.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnApproveReqPolice.setText("Approve ");
+        btnApproveReqPolice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnApproveReqPolice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveReqPoliceActionPerformed(evt);
@@ -91,6 +92,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         btnRejectReqPolice.setBackground(new java.awt.Color(255, 153, 153));
         btnRejectReqPolice.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnRejectReqPolice.setText("Reject ");
+        btnRejectReqPolice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnRejectReqPolice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectReqPoliceActionPerformed(evt);
@@ -137,6 +139,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         btnAssignToMe.setBackground(new java.awt.Color(102, 217, 255));
         btnAssignToMe.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnAssignToMe.setText("Assign to me");
+        btnAssignToMe.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnAssignToMe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAssignToMeActionPerformed(evt);
@@ -156,6 +159,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         btnDeleteReqPolice.setBackground(new java.awt.Color(255, 153, 153));
         btnDeleteReqPolice.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnDeleteReqPolice.setText("Delete ");
+        btnDeleteReqPolice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnDeleteReqPolice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteReqPoliceActionPerformed(evt);
@@ -172,21 +176,21 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
                         .addComponent(btnBack)
-                        .addGap(73, 73, 73)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
                                 .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(233, 233, 233)
                                 .addComponent(jLabel2)
                                 .addGap(28, 28, 28)
                                 .addComponent(txtCount, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 774, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(jLabel1))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
+                        .addGap(71, 71, 71)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 774, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
@@ -198,8 +202,11 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnRejectReqPolice)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnDeleteReqPolice)))))
-                .addContainerGap(75, Short.MAX_VALUE))
+                                .addComponent(btnDeleteReqPolice))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 774, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnApproveReqPolice, btnAssignToMe, btnDeleteReqPolice, btnRejectReqPolice});
@@ -207,7 +214,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBack))
                 .addGap(35, 35, 35)
@@ -216,8 +223,8 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(txtCount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAssignToMe)
                     .addComponent(btnApproveReqPolice)
@@ -226,8 +233,8 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnApproveReqPolice, btnAssignToMe, btnDeleteReqPolice, btnRejectReqPolice});

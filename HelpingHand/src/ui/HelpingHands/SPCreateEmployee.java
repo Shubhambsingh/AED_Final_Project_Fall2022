@@ -80,7 +80,7 @@ public class SPCreateEmployee extends javax.swing.JPanel {
             }
         });
 
-        btnCreateEmployee.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
+        btnCreateEmployee.setBackground(new java.awt.Color(0, 153, 51));
         btnCreateEmployee.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         btnCreateEmployee.setText("Add");
         btnCreateEmployee.addActionListener(new java.awt.event.ActionListener() {
