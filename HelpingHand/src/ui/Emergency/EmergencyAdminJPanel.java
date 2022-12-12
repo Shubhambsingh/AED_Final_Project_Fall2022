@@ -48,7 +48,7 @@ public class EmergencyAdminJPanel extends javax.swing.JPanel {
         btnCreateManageOrganization = new javax.swing.JButton();
         btnEmployeeCreation = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("Emergency Admin");

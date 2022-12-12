@@ -61,7 +61,7 @@ public class DonationSetUpInformation extends javax.swing.JPanel {
         jOrgName = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 255, 153));
 
         btnBackNgoSponsor.setBackground(new java.awt.Color(102, 217, 255));
         btnBackNgoSponsor.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N

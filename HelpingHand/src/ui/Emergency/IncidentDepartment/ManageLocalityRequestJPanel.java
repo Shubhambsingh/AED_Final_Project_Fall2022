@@ -70,7 +70,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         btnDeleteReqPolice = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         btnApproveReqPolice.setBackground(new java.awt.Color(102, 217, 255));
         btnApproveReqPolice.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N

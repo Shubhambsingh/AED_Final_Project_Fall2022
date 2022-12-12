@@ -61,7 +61,7 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         btnDeleteMedic = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         tblPolice.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -96,7 +96,7 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
 
         unitTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Customer Service", "Surveillance Team", "Emergency Respose" }));
 
-        btnAddMedic.setBackground(new java.awt.Color(102, 217, 255));
+        btnAddMedic.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
         btnAddMedic.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         btnAddMedic.setText("Add");
         btnAddMedic.addActionListener(new java.awt.event.ActionListener() {
@@ -113,6 +113,7 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
         btnBack.setBackground(new java.awt.Color(102, 217, 255));
         btnBack.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnBack.setText("<<");
+        btnBack.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -136,8 +137,8 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnBack)
-                        .addGap(74, 74, 74)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(126, 126, 126)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(186, 186, 186)
@@ -166,10 +167,13 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBack)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnBack)
+                        .addGap(34, 34, 34))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnDeleteMedic)
@@ -185,7 +189,7 @@ public class ManageIncidentStationJPanel extends javax.swing.JPanel {
                 .addComponent(btnAddMedic)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
