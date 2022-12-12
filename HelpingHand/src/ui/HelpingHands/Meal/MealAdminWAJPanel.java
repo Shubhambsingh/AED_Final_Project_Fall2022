@@ -57,7 +57,6 @@ public class MealAdminWAJPanel extends javax.swing.JPanel {
         jMngInvBtn = new javax.swing.JButton();
         jMealReqBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
@@ -85,8 +84,6 @@ public class MealAdminWAJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("Meal Service");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fs1.jpeg"))); // NOI18N
-
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/March_Meal-Prep.jpeg"))); // NOI18N
         jLabel2.setToolTipText("");
@@ -98,12 +95,9 @@ public class MealAdminWAJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(77, 77, 77)
+                        .addGap(132, 132, 132)
                         .addComponent(jMngInvBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(386, 386, 386)
+                        .addGap(331, 331, 331)
                         .addComponent(jMealReqBtn))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(473, 473, 473)
@@ -121,9 +115,7 @@ public class MealAdminWAJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jMngInvBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jMealReqBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(571, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE))
         );
@@ -161,7 +153,6 @@ public class MealAdminWAJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton jMealReqBtn;
     private javax.swing.JButton jMngInvBtn;
     // End of variables declaration//GEN-END:variables

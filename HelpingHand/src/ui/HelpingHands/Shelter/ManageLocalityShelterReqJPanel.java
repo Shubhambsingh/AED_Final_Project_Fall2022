@@ -87,7 +87,7 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "ID", "Shelter Name", "Capacity", "Location"
+                "ID", "Shelter Name", "Capacity", "Area"
             }
         ));
         jScrollPane1.setViewportView(jShelterTable);
@@ -126,16 +126,16 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
 
         btnDeleteReqHosp.setBackground(new java.awt.Color(255, 153, 153));
         btnDeleteReqHosp.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnDeleteReqHosp.setText("Delete Request");
+        btnDeleteReqHosp.setText("Delete");
         btnDeleteReqHosp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteReqHospActionPerformed(evt);
             }
         });
 
-        btnApproveReqHospital.setBackground(new java.awt.Color(102, 217, 255));
+        btnApproveReqHospital.setBackground(new java.awt.Color(0, 153, 0));
         btnApproveReqHospital.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnApproveReqHospital.setText("Approve Request");
+        btnApproveReqHospital.setText("Approve");
         btnApproveReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveReqHospitalActionPerformed(evt);
@@ -144,7 +144,7 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
 
         btnRejectReqHospital.setBackground(new java.awt.Color(255, 153, 153));
         btnRejectReqHospital.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnRejectReqHospital.setText("Reject Request");
+        btnRejectReqHospital.setText("Reject");
         btnRejectReqHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectReqHospitalActionPerformed(evt);
@@ -178,16 +178,16 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnAssignToMe)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(39, 39, 39)
                                         .addComponent(btnDeleteReqHosp)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(42, 42, 42)
                                         .addComponent(btnApproveReqHospital)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(38, 38, 38)
                                         .addComponent(btnRejectReqHospital))))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(15, 15, 15)
+                                .addGap(66, 66, 66)
                                 .addComponent(btnBack)
-                                .addGap(165, 165, 165)
+                                .addGap(114, 114, 114)
                                 .addComponent(jLabel1)))
                         .addGap(0, 87, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -199,16 +199,19 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnApproveReqHospital, btnAssignToMe, btnDeleteReqHosp, btnRejectReqHospital});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnBack))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(btnBack)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -225,6 +228,9 @@ public class ManageLocalityShelterReqJPanel extends javax.swing.JPanel {
                     .addComponent(btnRejectReqHospital))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnApproveReqHospital, btnAssignToMe, btnDeleteReqHosp, btnRejectReqHospital});
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAssignToMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignToMeActionPerformed

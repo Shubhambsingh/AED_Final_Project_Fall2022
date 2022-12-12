@@ -151,7 +151,7 @@ public class SPManageOrganization extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(organizationJTable);
 
-        btnDeleteRequest.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Red"));
+        btnDeleteRequest.setBackground(new java.awt.Color(255, 102, 102));
         btnDeleteRequest.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         btnDeleteRequest.setText("Remove");
         btnDeleteRequest.addActionListener(new java.awt.event.ActionListener() {
@@ -179,6 +179,7 @@ public class SPManageOrganization extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 102));
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MapIconMain.png"))); // NOI18N
         jButton1.setText("Explore");
