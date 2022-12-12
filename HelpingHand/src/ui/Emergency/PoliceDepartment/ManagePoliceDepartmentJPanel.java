@@ -61,7 +61,7 @@ public class ManagePoliceDepartmentJPanel extends javax.swing.JPanel {
         txtUnitSize = new javax.swing.JTextField();
         unitTypeComboBox = new javax.swing.JComboBox<>();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 153));
 
         btnAddMedic.setBackground(new java.awt.Color(102, 217, 255));
         btnAddMedic.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N

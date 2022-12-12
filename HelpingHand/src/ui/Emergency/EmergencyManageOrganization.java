@@ -67,7 +67,7 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
         JArea = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 204, 255));
 
         organizationEmergencyJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

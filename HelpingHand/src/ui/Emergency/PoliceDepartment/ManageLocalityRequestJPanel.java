@@ -70,7 +70,7 @@ public class ManageLocalityRequestJPanel extends javax.swing.JPanel {
         txtCount = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 255, 153));
 
         btnAssignToMe.setBackground(new java.awt.Color(102, 217, 255));
         btnAssignToMe.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
