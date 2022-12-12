@@ -128,7 +128,7 @@ public class SPManageUserDetails extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jLabel4.setText("Role :");
 
-        btnCreateUserAccount.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
+        btnCreateUserAccount.setBackground(new java.awt.Color(0, 153, 51));
         btnCreateUserAccount.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         btnCreateUserAccount.setText("Add");
         btnCreateUserAccount.addActionListener(new java.awt.event.ActionListener() {

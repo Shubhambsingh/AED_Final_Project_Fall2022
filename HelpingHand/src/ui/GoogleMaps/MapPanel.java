@@ -88,12 +88,12 @@ public class MapPanel extends javax.swing.JPanel {
         jXMapViewer.setLayout(jXMapViewerLayout);
         jXMapViewerLayout.setHorizontalGroup(
             jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jXMapViewerLayout.createSequentialGroup()
-                .addContainerGap(442, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jXMapViewerLayout.createSequentialGroup()
+                .addContainerGap(361, Short.MAX_VALUE)
                 .addGroup(jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(comboMapType, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboNetwork, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGap(87, 87, 87))
         );
         jXMapViewerLayout.setVerticalGroup(
             jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

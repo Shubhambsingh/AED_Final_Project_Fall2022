@@ -74,17 +74,21 @@ public class DonationSetUpInformation extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Donation_image.jpg"))); // NOI18N
 
+        jButton2.setBackground(new java.awt.Color(0, 153, 51));
         jButton2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jButton2.setText("Add");
+        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 102));
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MapIconMain.png"))); // NOI18N
         jButton1.setText("Explore");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -165,9 +169,9 @@ public class DonationSetUpInformation extends javax.swing.JPanel {
                             .addComponent(jLabel4))
                         .addGap(18, 18, 18)
                         .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)))
-                .addContainerGap(149, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(137, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(104, 104, 104)

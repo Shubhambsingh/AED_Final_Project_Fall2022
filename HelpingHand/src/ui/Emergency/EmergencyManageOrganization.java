@@ -58,7 +58,6 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblOrganizationEmergency = new javax.swing.JTable();
         btnDeleteRequest = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         txtEmergencyOrganiztionName = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -66,6 +65,7 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         JArea = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 255));
 
@@ -84,9 +84,9 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
             }
         });
 
-        addJButton.setBackground(new java.awt.Color(102, 217, 255));
+        addJButton.setBackground(new java.awt.Color(0, 153, 51));
         addJButton.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        addJButton.setText("Add Organization");
+        addJButton.setText("Add");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addJButtonActionPerformed(evt);
@@ -123,14 +123,12 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
 
         btnDeleteRequest.setBackground(new java.awt.Color(255, 153, 153));
         btnDeleteRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        btnDeleteRequest.setText("Delete Request");
+        btnDeleteRequest.setText("Remove");
         btnDeleteRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteRequestActionPerformed(evt);
             }
         });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/administratorBig.png"))); // NOI18N
 
         jLabel4.setBackground(new java.awt.Color(102, 217, 255));
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -162,13 +160,17 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 102));
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
-        jButton1.setText("Set Area");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MapIconMain.png"))); // NOI18N
+        jButton1.setText("Explore");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/administratorBig.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -177,9 +179,9 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(backJButton)
-                        .addGap(93, 93, 93)
+                        .addGap(54, 54, 54)
+                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
                         .addComponent(jLabel3))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(103, 103, 103)
@@ -190,37 +192,36 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(btnDeleteRequest))
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 603, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtEmergencyOrganiztionName, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGap(142, 142, 142)
+                                    .addComponent(organizationEmergencyJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel5)
-                                                .addComponent(jLabel4))
-                                            .addGap(201, 201, 201)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(142, 142, 142)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(txtEmergencyOrganiztionName, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(addJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(JArea, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(142, 142, 142)
-                                .addComponent(organizationEmergencyJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                            .addComponent(jLabel5)
+                                            .addComponent(jLabel4))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(142, 142, 142)
+                                            .addComponent(JArea, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(12, 12, 12)
+                                .addComponent(jButton1))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(7, 7, 7)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(backJButton)
-                    .addComponent(jLabel3))
-                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(backJButton))
+                .addGap(33, 33, 33)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -236,11 +237,11 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
                     .addComponent(jButton1)
                     .addComponent(JArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addJButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(109, 109, 109))
+                .addGap(47, 47, 47)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(87, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -352,11 +353,11 @@ public class EmergencyManageOrganization extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JButton btnDeleteRequest;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox organizationEmergencyJComboBox;
     private javax.swing.JTable tblOrganizationEmergency;

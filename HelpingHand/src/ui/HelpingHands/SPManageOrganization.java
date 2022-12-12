@@ -114,7 +114,7 @@ public class SPManageOrganization extends javax.swing.JPanel {
             }
         });
 
-        addJButton.setBackground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
+        addJButton.setBackground(new java.awt.Color(0, 153, 51));
         addJButton.setFont(new java.awt.Font("SansSerif", 1, 13)); // NOI18N
         addJButton.setText("Add ");
         addJButton.addActionListener(new java.awt.event.ActionListener() {
