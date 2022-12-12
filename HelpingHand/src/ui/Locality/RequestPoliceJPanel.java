@@ -70,16 +70,16 @@ public class RequestPoliceJPanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel5.setText("Area :");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, -1, -1));
 
         doctorTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Customer Service", "Surveillance Team", "CIA", "Emergency Response", "Federal Team" }));
-        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 180, -1));
+        add(doctorTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 180, -1));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel7.setText("No of People Affected :");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
-        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 184, -1));
-        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 184, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
+        add(txtVenue, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, 184, -1));
+        add(txtPeopleCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 184, -1));
 
         btnSendRequest.setBackground(new java.awt.Color(102, 217, 255));
         btnSendRequest.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
@@ -89,7 +89,7 @@ public class RequestPoliceJPanel extends javax.swing.JPanel {
                 btnSendRequestActionPerformed(evt);
             }
         });
-        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 510, -1, -1));
+        add(btnSendRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         jLabel1.setText("Locality Police Request");
@@ -118,24 +118,24 @@ public class RequestPoliceJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 23, -1, -1));
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel8.setText("Police Type:");
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel2.setText("Emergency type :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -1));
 
         emergencyTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Low", "Medium", "High", "Immediate" }));
-        add(emergencyTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 184, -1));
+        add(emergencyTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 184, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/emergencyEmployee512xxx.png"))); // NOI18N
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, 660, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Emergency_ser_team.jpeg"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 130, 150));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 130, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSendRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendRequestActionPerformed
