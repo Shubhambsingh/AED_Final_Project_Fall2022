@@ -139,7 +139,7 @@ public class SetupNGOInfoJPanel extends javax.swing.JPanel {
                             .addComponent(JArea, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(56, 56, 56)
+                        .addGap(26, 26, 26)
                         .addComponent(jLabel3)))
                 .addContainerGap(102, Short.MAX_VALUE))
         );
