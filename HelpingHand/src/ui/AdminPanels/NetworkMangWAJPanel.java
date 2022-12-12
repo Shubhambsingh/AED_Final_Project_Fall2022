@@ -62,7 +62,7 @@ public class NetworkMangWAJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(198, 210, 198));
+        setBackground(new java.awt.Color(204, 204, 255));
 
         nameJTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
