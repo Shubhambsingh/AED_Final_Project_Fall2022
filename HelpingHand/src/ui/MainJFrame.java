@@ -383,17 +383,17 @@ public class MainJFrame extends javax.swing.JFrame {
         jframe.setVisible(true);
         jframe.setResizable(false);
         jframe.setLayout(null);
-        jframe.setSize(600, 600);
+        jframe.setSize(700, 700);
         jframe.setTitle("Helping Hand");
         jframe.add(chatarea);
         jframe.add(chatbox);
         
         //For chat area
-        chatarea.setSize(500, 400);
+        chatarea.setSize(600, 500);
         chatarea.setLocation(2,2);
         
         // for input area
-        chatbox.setSize(540,30);
+        chatbox.setSize(600,30);
         chatbox.setLocation(2,500);
         
         chatbox.addActionListener(new ActionListener() {
@@ -404,57 +404,70 @@ public class MainJFrame extends javax.swing.JFrame {
                 chatarea.append("YOU -> "+gtext+"\n");
                 chatbox.setText("");
                 String req_cat  = "";
-                
                 if(gtext.contains("hi")){
                     bot("Hi, How may I assist you?",chatarea);
                 }
                 
-                if(gtext.contains("blood")){
+                if(gtext.contains("helping hand") || gtext.contains("helping hands") ){
                     
-                    bot("So how can I help you?",chatarea);
+                    bot("Please find a list of Enterprises that we have: \n \n Service Provider Enterprise \n Hospital Enterprise \n NGO Enterprise \n Donation Enterprise \n FSDistributor Enterprise \n Locality Enterprise \n Emergency Enterprise" ,chatarea);
                 }
-                if(gtext.contains("blood") || gtext.contains("test")){
-                    bot("Okay. Please tell me the test date.",chatarea);
+                
+                if(gtext.contains("service") && gtext.contains("provider")){
                     
+                    bot("We have two types of organizations in Shelter: \t Meal Organization and Shelter Organization \n Please give the organization you want to explore",chatarea);
                 }
-                if(gtext.contains("dec")){
-                    bot("Okay. you have scheduled a test date.",chatarea);
+                if(gtext.contains("meal organization")){
+                    
+                    bot("Service Provider Admin can add an employee that serves the meal for the victims \n \t Employee can login and accept food requests ",chatarea);
+                }
+                if(gtext.contains("shelter organization")){
+                    
+                    bot("Service Provider Admin can add an employee that provides the shelter for the victims \n \t Employee can login and accept shelter requests" ,chatarea);
+                }
+                if(gtext.contains("emergency")){
+                    
+                    bot(" Opps! Is it an Incident or do you need Police assistance.",chatarea);
+                }
+                if(gtext.contains("police") || gtext.contains("incident")){
+                    
+                    bot("Please inform the Locality admin to login and raise a request",chatarea);
+                }
+              
+                if(gtext.contains("hospital")){
+                    
+                    bot("We have two types of organizations in Hospital: \t  Clinic Organization and Blood Organization \n Please give the organization you want to explore",chatarea);
+                }
+                
+                if(gtext.contains("donation") || gtext.contains("ngo")){
+                    bot("Please login as Donation Admin and Accept or Reject the NGO Request",chatarea);
                     
                 }
                 
-                else if(gtext.contains("equipment") && gtext.contains("book")){
-                    bot("Okay. Please tell me equipments and quantity.",chatarea);
-                    if(gtext.contains("oxygen")){
+                if(gtext.contains("ngo")){
+                    bot("You can add a request for donation and manage the requests",chatarea);
                     
-                    bot("Thankyou for ordering",chatarea);
                 }
+                
+                if(gtext.contains("blood") || gtext.contains("clinic")){
+                    bot("Please login as Hospital Admin to see Blood requests.",chatarea);
+                    
                 }
-                else if(gtext.contains("2022") && req_cat.equals("MedicalTest")){
-//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
-//                    Date date = formatter.parse(gtext);
-                    user_input.add(gtext);
-                    if(req_cat.equals("MedicalTest")){
-                        bot("Okay. What test do you want to do?",chatarea);
-                    }
-                    else{
-                        bot("Okay. What equipment do you want to order?",chatarea);
-                    }
+                
+                else if(gtext.contains("locality") ){
+                    bot("Please login as locality admin to create requests for any requirements",chatarea);
+                    
                 }
-                else if(gtext.contains("blood")){
-//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
-//                    Date date = formatter.parse(gtext);
-                    user_input.add("MedicalTest");
-                    user_input.add(gtext);
-                    bot("A request has been raised. You'll receive an update shortly from the hospital.",chatarea);
-                }  
-                else if(gtext.contains("bed") || gtext.contains("oxygen")){
-//                    SimpleDateFormat formatter = new SimpleDateFormat("MM.dd.yyyy", Locale.ENGLISH);
-//                    Date date = formatter.parse(gtext);
-                    user_input.add("MedicalEquipment");
-                    user_input.add(gtext);
-                    user_input.add("BOT");
-                    bot("A request has been raised. You'll receive an update shortly from the hospital.",chatarea);
-                }  
+                
+                else if(gtext.contains("fsdistributor") ){
+                    bot("You can create meal requests and manage these requests",chatarea);
+                    
+                }
+                
+                else if(gtext.contains("clinic") && gtext.contains("hospital")){
+                    bot("Please login as Hospital Admin to see clinic requests.",chatarea);
+                    
+                } 
             }
    
         });
