@@ -85,7 +85,7 @@ public class SetupAdminsJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(198, 210, 198));
+        setBackground(new java.awt.Color(204, 204, 255));
 
         jLabel5.setBackground(new java.awt.Color(102, 217, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
